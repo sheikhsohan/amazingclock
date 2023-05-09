@@ -33,4 +33,28 @@ function updateClock() {
   }
   
   setInterval(updateClock, 1000);
+
+
+  function showModal() {
+	// Get the modal and its components
+	const modal = document.getElementById("modal");
+	const modalContent = document.querySelector(".modal-content");
+	const modalImg = document.querySelector(".modal-content img");
+	const modalText = document.querySelector(".modal-content p");
+	const modalClose = document.querySelector(".close");
+  
+	// Set the image and text
+	modalImg.src = "img/developer.jpg";
+	modalText.textContent = "This is Sohan. He created this dynamic clock color page.";
+  
+	// Display the modal
+	modal.style.display = "block";
+  
+	// Add an event listener to close the modal when the user clicks on it
+	modal.addEventListener("click", function(event) {
+	  if (event.target === modalClose || event.target === modal) {
+		modal.style.display = "none";
+	  }
+	});
+  }
   
