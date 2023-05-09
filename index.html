@@ -29,12 +29,27 @@
 	    <span class="close">&times;</span>
 	    <img src="img/developer.jpg" alt="Sohan">
 	    <p>This is Sohan. He created this dynamic clock color page.</p>
+		<div class="button-container">
+			<button class="my-button" onclick="openMySite()">MySite</button>
+			<button class="my-button" onclick="openMyFbSite()">Facebook</button>
+		</div>
+
 	  </div>
 	</div>
 
 	<div class="floating-text">
 		click <span class="floating-btn">Sohan</span> for more information
 	  </div>
+	  
+	  <div id="myModal" class="modal">
+		<div class="modal-content">
+		  <p>Hey🥰 You are using <span class="warning">Mobile Browser</span>. It's <span class="warning">3D</span> website. Website not showing perfectly.</p>
+		  <p>Are you sure you want to visit my site with mobile browser?</p>
+		  <button id="cancelBtn">No</button>
+		  <button id="proceedBtn">Yes</button>
+		</div>
+	  </div>
+	  
 	  
 	<script src="script.js"></script>
 	
