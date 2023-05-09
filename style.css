@@ -55,4 +55,20 @@ body {
 	  bottom: -1.5rem;
 	}
   }
-  
+  .visitor-count {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .visitor-count {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .visitor-count {
+        font-size: 1rem;
+    }
+}
