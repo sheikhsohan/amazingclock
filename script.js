@@ -87,3 +87,35 @@ const floatingBtn = document.querySelector(".floating-btn");
 sohanSpan.addEventListener("click", function() {
   floatingBtn.click();
 });
+
+const modal = document.getElementById("myModal");
+const cancelBtn = document.getElementById("cancelBtn");
+const proceedBtn = document.getElementById("proceedBtn");
+
+function isMobile() {
+  return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function openMySite() {
+  if (isMobile()) {
+    modal.style.display = "block";
+
+    cancelBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    proceedBtn.onclick = function() {
+      window.open("https://sheikhsohan.vercel.app/","_blank");
+      modal.style.display = "none";
+    }
+  } else {
+    window.open("https://sheikhsohan.vercel.app/","_blank");
+  }
+}
+
+
+  
+  
+  function openMyFbSite() {
+	window.open("https://www.facebook.com/s.s0han","_blank");
+  }
