@@ -1,4 +1,4 @@
-body {
+.container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -55,6 +55,7 @@ body {
 	  bottom: -1.5rem;
 	}
   }
+
   .visitor-count {
     font-size: 1.5rem;
     margin: 1rem 0;
@@ -72,3 +73,5 @@ body {
         font-size: 1rem;
     }
 }
+
+  
