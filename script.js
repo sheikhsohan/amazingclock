@@ -30,6 +30,7 @@ function updateClock() {
 	document.querySelector('.clock').style.color = borderColor;
 	document.querySelector('.clock').style.borderColor = borderColor;
 	document.querySelector('.changecolor').style.color = borderColor;
+	document.querySelector('.floating-btn').style.color = borderColor;
   }
   
   setInterval(updateClock, 1000);
